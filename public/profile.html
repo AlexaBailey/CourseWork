@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alata" />
+    <style>
+        body{
+            overflow: hidden;
+        }
+
+    </style>
+    <link href="css/styles.css" rel="stylesheet" />
+    <div class="page-container">
+        <div class="page-disciplinspage">
+            <img
+                src="icons\profile-back.png"
+                alt="profile"
+                class="profile-back"
+            />
+            <img
+            alt="navbar"
+            src="icons\navbar-back-profile.png"
+            class="homepage-navbar-back"
+            />
+            <a href="news.html" class="homepage-newstext"><span>News&amp;Features</span></a>
+            <a href="sorting.html"class="homepage-sorttext"><span>Sorting hat</span></a>
+            <a href="disciplins.html" class="homepage-disciplinstext"><span>Disciplins</span></a>
+            <a href="enroll.html" class="homepage-enrolltext"><span>Enroll</span></a>
+            <div class="homepage-contact">
+              <button type="button" class="homepage-contacttext"><span>Contact</span></button>
+            </div>
+            <div class="homepage-about">
+            <button class="homepage-abouttext" type="button"><span>About</span></button>
+            </div>
+            <button onclick="home_page()" type="button" class="home">
+              <img
+              alt="Rectangle3312"
+              src="icons\castle-back.png"
+              class="homepage-castleback"
+            />
+            <img
+              alt="icons8hogwarts10013014"
+              src="icons\icons8-hogwarts-100.png"
+              class="homepage-icons8hogwarts1001"
+            />
+        </button>
+            <img
+              alt="form1"
+              src="icons\profile-form.png"
+              class="form1"
+            />
+            <img
+              alt="form1"
+              src="icons\profile-form.png"
+              class="form2"
+            />
+            <img
+            alt="submit"
+            src="icons\submit-back.png"
+            class="submit-back"
+          />
+          <form action="/profile.html" method="post">
+         
+            <input class="p-first" type="text" name = "firstname" id="firstname" required>
+            <input class="p-second" name = "secondname" type="text" id="secondname" required>
+            <input class="p-group" type="text" name = "group" id="group" required>
+            <input class="p-score" name = "score" type="text" id="score" required>
+            <span class="t-first"><span>First Name</span></span>
+            <span class="t-second"><span>Second Name</span></span>
+            <span class="t-group"><span>Group</span></span>
+            <span class="t-score"><span>Score</span></span>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+            </div>
+          
+         <style>
+            body{
+                overflow-y: scroll;
+            }
+            .form1{
+                position: absolute;
+                top: 224px;
+                left: 304px;
+
+            }
+            .form2{
+                position: absolute;
+                top: 224px;
+                left: 714px;
+
+            }
+            .submit-back{
+                position: absolute;
+                top: 562px;
+                left: 557px;
+
+            }
+            .submit-button{
+                position: absolute;
+                top: 582px;
+                left: 593px;
+                width: 161px;
+                height: 38px;
+                border-radius: 50px;
+                font-family: Architects Daughter;
+                border: None;
+                color: white;
+                font-weight: 400px;
+                font-size: 24px;
+                background-color: #16849B;
+            }
+            .submit-button:hover{
+                opacity: 0.8;
+            }
+            input{
+                width: 296px;
+                height: 51px;
+                border-radius: 50px;
+                border: None;
+                font-family: Architects Daughter;
+            }
+            span{
+                color:white;
+                font-family: Architects Daughter ;
+                
+            }
+            .p-first{
+                position: absolute;
+                top: 313px;
+                left: 327px;
+                font-size: 24px;
+
+
+            }
+            .p-second{
+                position: absolute;
+                top: 410px;
+                left: 327px;
+                font-size: 24px;
+                
+            }
+            .p-group{
+                position: absolute;
+                top: 308px;
+                left: 739px;
+                font-size: 24px;
+                
+            }
+            .p-score{
+                position: absolute;
+                top: 410px;
+                left: 739px;
+                font-size: 24px;
+                
+            }
+            .t-first{
+                position: absolute;
+                top: 268px;
+                left: 327px;
+                font-size: 24px;
+
+
+            }
+            .t-second{
+                position: absolute;
+                top: 374px;
+                left: 327px;
+                font-size: 24px;
+                
+            }
+            .t-group{
+                position: absolute;
+                top: 268px;
+                left: 739px;
+                font-size: 24px;
+                
+            }
+            .t-score{
+                position: absolute;
+                top: 374px;
+                left: 739px;
+                font-size: 24px;
+                
+            }
+
+
+         </style>
+           
+           <script src="js/script.js"></script>
+           <script src="../login.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+
+  {{>home}}
+
+  <a href="/users" type="button" class="users"><i class="bi bi-eye"></i> view users</a>
+
+  <style>
+  th {
+  cursor: pointer;
+  color:white;
+  font-family: Architects Daughter;
+
+}
+td{
+  color:white;
+  font-family: Architects Daughter;
+}
+
+.users{
+  position: absolute;
+  top:2%;
+  right:15%;
+  background-color: rgb(28, 133, 203);
+  border-color: rgb(28, 133, 203);
+  height: 36px;
+  width: 138px;;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  color:white;
+  line-height: 2rem;
+
+}
+.users:hover{
+  color:white;
+  background-color: rgb(237, 156, 44);
+  border-color: rgb(237, 156, 44);
+}
+.add{
+  position: absolute;
+  top:2%;
+  right:1%;
+  text-decoration: none;
+  background-color: rgb(28, 133, 203);
+  border-color: rgb(28, 133, 203);
+  height: 36px;
+  width: 142px;;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  color:white;
+  line-height: 2rem;
+
+}
+.add:hover{
+  color:white;
+  background-color: rgb(237, 156, 44);
+  border-color: rgb(237, 156, 44);
+}
+.d-flex{
+  position: absolute;
+  top:-12%;
+}
+
+body
+{
+  background-image: url('../../icons/students2.jpg');
+  color:white;
+  font-family: Architects Daughter;
+}
+
+</style>
+<script>
+let tid = "#usersTable";
+let headers = document.querySelectorAll(tid + " th");
+
+// Sort the table element when clicking on the table headers
+headers.forEach(function(element, i) {
+  element.addEventListener("click", function() {
+    w3.sortHTML(tid, ".item", "td:nth-child(" + (i + 1)+")" );
+  });
+});
+
+console.log("!");
+</script>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>

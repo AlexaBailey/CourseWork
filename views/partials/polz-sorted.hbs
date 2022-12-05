@@ -1,0 +1,128 @@
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alata" />
+
+{{#if removedUser}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+Student has been removed.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+
+<div class="row">
+  <div class="col-6">
+    <h1>Students</h1>
+  </div>
+  <div class="add">
+    <a href="/signup-admin" type="button" class="add">+ add student</a>
+  </div>
+</div>
+
+<table class="table table-bordered" id="usersTable">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nickname</th>
+      <th scope="col">Password</th>
+      <th scope="col">Role</th>
+      <th scope="col" class="text-end">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each rows}}
+    <tr class="item">
+      <td scope="row">{{this.id}}</th>
+      <td>{{this.nickname}}</td>
+      <td>{{this.password}}</td>
+      <td>{{this.role}}</td>
+      <td class="text-end">
+        <a href="/editpolz/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-pencil"></i>
+          Edit</a>
+        <a href="/polz{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-person-x"></i> Delete</a>
+      </td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
+<style>
+  th {
+  cursor: pointer;
+  color:white;
+  font-family: Architects Daughter;
+
+}
+td{
+  color:white;
+  font-family: Architects Daughter;
+}
+
+.add{
+  position: absolute;
+  top:2%;
+  right:1%;
+  background-color: rgb(28, 133, 203);
+  border-color: rgb(28, 133, 203);
+  height: 36px;
+  width: 142px;;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  color:white;
+  line-height: 2rem;
+
+}
+.add:hover{
+  color:white;
+  background-color: rgb(237, 156, 44);
+  border-color: rgb(237, 156, 44);
+}
+.d-flex{
+  position: absolute;
+  top:-12%;
+  right:1%;
+}
+
+body
+{
+  background-image: url('../../icons/users.png');
+  color:white;
+  font-family: Architects Daughter;
+}
+
+</style>
+<script>
+let tid = "#usersTable";
+let headers = document.querySelectorAll(tid + " th");
+
+// Sort the table element when clicking on the table headers
+headers.forEach(function(element, i) {
+  element.addEventListener("click", function() {
+    w3.sortHTML(tid, ".item", "td:nth-child(" + (i + 1)+")" );
+  });
+});
+
+console.log("!");
+</script>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+
+                    
+                     
+
+                      
+                   
+
+                        
+                      
+                        
+                       
+
+
+
+
+
+    

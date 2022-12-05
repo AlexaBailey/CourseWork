@@ -1,0 +1,81 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href = "/records">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit Student</li>
+  </ol>
+</nav>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alata" />
+
+
+
+{{#if alert}}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{alert}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+{{/if}}
+
+{{#each rows}}
+<form class="row g-3 needs-validation" method="POST" action="/edit_el/{{this.info_id}}" novalidate>
+<div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" value="{{this.first_name}}" placeholder="First Name" name="first_name">
+      <label for="floatingInput">First Name</label>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" value="{{this.last_name}}" placeholder="Last Name" name="last_name">
+      <label for="floatingInput">Last Name</label>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" value="{{this.group_name}}" placeholder="Group" name="group_name">
+      <label for="floatingInput">Group</label>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" value="{{this.score}}" placeholder="Score" name="score">
+      <label for="floatingInput">Score</label>
+    </div>
+  </div>
+    <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" value="{{this.el_name}}" placeholder="Elective" name="el_name">
+      <label for="floatingInput">Elective</label>
+    </div>
+  </div>
+  <div class="col-12 d-grid">
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+<style>
+.placeholder{
+    color:rgb(36, 33, 33);
+  }
+  label{
+    color:rgb(36, 33, 33);
+  }
+</style>
+</form>
+{{/each}}
+<style>
+body
+{
+  background-image: url('../../icons/edit.png');
+  color:white;
+  font-family: Architects Daughter;
+}
+a{
+  color: rgb(28, 133, 203);
+}
+a:hover{
+  color: rgb(237, 156, 44);
+}
+.breadcrumb-item.active{
+  color:rgb(237, 156, 44);
+}
+</style>

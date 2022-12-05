@@ -1,0 +1,102 @@
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alata" />
+{{#if removedUser}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+Elective has been removed.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+
+<div class="row">
+  <div class="col-6">
+    <h1>Electives</h1>
+  </div>
+</div>
+
+<table class="table table-bordered" id="usersTable">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Elective</th>
+  
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each rows}}
+    <tr class="item">
+      <td>{{this.el_name}}</td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
+<style>
+  th {
+  cursor: pointer;
+  color:white;
+  font-family: Architects Daughter;
+
+}
+td{
+  color:white;
+  font-family: Architects Daughter;
+}
+
+
+.d-flex{
+  position: absolute;
+  top:-12%;
+  right:1%;
+}
+
+body
+{
+  background-image: url('../../icons/disciplins-back.jpg');
+  color:white;
+  font-family: Architects Daughter;
+}
+.container{
+  width:40%;
+}
+table{
+  font-size: 20px;
+
+}
+
+
+</style>
+<script>
+let tid = "#usersTable";
+let headers = document.querySelectorAll(tid + " th");
+
+// Sort the table element when clicking on the table headers
+headers.forEach(function(element, i) {
+  element.addEventListener("click", function() {
+    w3.sortHTML(tid, ".item", "td:nth-child(" + (i + 1)+")" );
+  });
+});
+
+console.log("!");
+</script>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+
+                    
+                     
+
+                      
+                   
+
+                        
+                      
+                        
+                       
+
+
+
+
+
+    

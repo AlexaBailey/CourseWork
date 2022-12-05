@@ -1,0 +1,257 @@
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alata" />
+
+
+{{#if removedUser}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+Student has been removed.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+<div class="row">
+  <div class="col-6">
+    <h1>Students</h1>
+  </div>
+</div>
+<a href="/records" style="text-decoration: none">View all records ↠ </a>
+<form class="d-flex" method="POST" action="/task" novalidate>
+          <input class="form-control me-2" type="search" placeholder="Search" name="searchtask" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+
+<table class="table table-bordered" id="usersTable">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Group</th>
+      <th scope="col">Score</th>
+      <th scope="col">Electives</th>
+      <th scope="col" class="text-end">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each rows}}
+    <tr class="item">
+      <td scope="row">{{this.id}}</th>
+      <td>{{this.first_name}}</td>
+      <td>{{this.last_name}}</td>
+      <td>{{this.group_name}}</td>
+      <td>{{this.score}}</td>
+      <td>{{this.el_name}}</td>
+      <td class="text-end">
+        <a href="/viewuser/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-eye"></i> View</a>
+        <a href="/edituser/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-pencil"></i>
+          Edit</a>
+        <a href="/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-person-x"></i> Delete</a>
+      </td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
+<table class="electives">
+<span class="popular">Popularity of electives</span>
+ <tbody id="tableData" class="tableData"></tbody>
+ </table>
+<style>
+  th {
+
+  color:white;
+  font-family: Architects Daughter;
+
+}
+.d-flex{
+  position: absolute;
+  top:1%;
+  right:1%;
+}
+td{
+  color:white;
+  font-family: Architects Daughter;
+}
+body
+{
+  background-image: url('../../icons/users.png');
+  color:white;
+  font-family: Architects Daughter;
+}
+.tableData{
+  color:white;
+  font-family: Architects Daughter;
+}
+.popular{
+  font-size: 23px;
+}
+.tableData{
+  font-size: 20px;
+}
+</style>
+<script>
+let tid = "#usersTable";
+let headers = document.querySelectorAll(tid + " th");
+
+// Sort the table element when clicking on the table headers
+headers.forEach(function(element, i) {
+  element.addEventListener("click", function() {
+    w3.sortHTML(tid, ".item", "td:nth-child(" + (i + 1)+")" );
+  });
+});
+
+console.log("!");
+</script>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script>
+onload = function ()
+{
+var dict = new Object();
+var dict = {"Potions": 0,
+            "Quidditch": 0,
+            "Numerology": 0,
+            "Astronomy": 0,
+            "DDA": 0,
+};
+var numCell = 5; // zero-индекс нужного столбца, я выбрал 1-й, т.е. второй слева столбец
+var cTR = document.getElementById ('usersTable').rows;
+
+
+
+                     for (var A = [], j = 0, J = cTR.length; j < J; j++)
+                        {
+                        var t = cTR [j].cells [numCell].innerHTML;
+                        if (A [t]) A [t]++; else A [t] = 1;
+                        }
+                     for (var txt in A){
+                      if (txt.includes("Potions")){
+                         dict["Potions"]+=A[txt];
+                       
+                     
+                     
+                    
+                     }
+             
+                     
+                     }
+                    
+                    
+var numCell = 5; // zero-индекс нужного столбца, я выбрал 1-й, т.е. второй слева столбец
+var cTR = document.getElementById ('usersTable').rows;
+var count;
+
+                     for (var A = [], j = 0, J = cTR.length; j < J; j++)
+                        {
+                        var t = cTR [j].cells [numCell].innerHTML;
+                        if (A [t]) A [t]++; else A [t] = 1;
+                        }
+                     for (var txt in A){
+                      if (txt.includes("Quidditch")){
+
+                        dict["Quidditch"]+=A[txt];
+                     
+                    
+                     }
+
+
+                     }
+var numCell = 5; // zero-индекс нужного столбца, я выбрал 1-й, т.е. второй слева столбец
+var cTR = document.getElementById ('usersTable').rows;
+var count;
+
+                     for (var A = [], j = 0, J = cTR.length; j < J; j++)
+                        {
+                        var t = cTR [j].cells [numCell].innerHTML;
+                        if (A [t]) A [t]++; else A [t] = 1;
+                        }
+                     for (var txt in A){
+                      if (txt.includes("Numerology")){
+
+                        dict["Numerology"]+=A[txt];
+                     
+                     
+                      }
+                     }
+                    var numCell = 5; // zero-индекс нужного столбца, я выбрал 1-й, т.е. второй слева столбец
+var cTR = document.getElementById ('usersTable').rows;
+var count;
+
+                     for (var A = [], j = 0, J = cTR.length; j < J; j++)
+                        {
+                        var t = cTR [j].cells [numCell].innerHTML;
+                        if (A [t]) A [t]++; else A [t] = 1;
+                        }
+                     for (var txt in A){
+                      if (txt.includes("Astronomy")){
+
+                        dict["Astronomy"]+=A[txt];
+                     
+                      }
+                    
+                     }
+                    var numCell = 5; // zero-индекс нужного столбца, я выбрал 1-й, т.е. второй слева столбец
+var cTR = document.getElementById ('usersTable').rows;
+var count;
+
+                     for (var A = [], j = 0, J = cTR.length; j < J; j++)
+                        {
+                        var t = cTR [j].cells [numCell].innerHTML;
+                        if (A [t]) A [t]++; else A [t] = 1;
+                        }
+                     for (var txt in A){
+                      if (txt.includes("DDA")){
+
+                        dict["DDA"]+=A[txt];
+                     
+                     
+                    
+                     }
+                    
+                    
+}
+
+
+var items = Object.keys(dict).map(function(key){
+  return [key,dict[key]];
+});
+items.sort(function(first,second){
+  return second[1]-first[1];
+});
+console.log("!");
+list={}
+ list= items.map(function(y) {
+  return ({
+    elective:y[0],
+    enrolled:y[1]
+    
+  });
+});
+   object = list;
+                    array = Object.keys(object).map(function(k) {
+                        return object[k];
+                    });
+                   var mainObj = array;
+               
+                   
+                   var k = '<tbody>'
+                   for(i = 0;i < mainObj.length; i++){
+                       k+= '<tr class="info">';
+                       k+= '<td>' + mainObj[i].elective +'           ' + '</td>';
+                       k+= '<td>' +':  ' + mainObj[i].enrolled + ''+ '</td>';
+                   
+                       k+= '</tr>';
+                   }
+                   k+='</tbody>';
+                   document.getElementById('tableData').innerHTML = k;
+}
+</script>
+
+
+
+
+
+    

@@ -1,0 +1,60 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/electives">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">New Elective</li>
+  </ol>
+</nav>
+
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+<form class="row g-3 needs-validation" method="POST" action="/add_el" novalidate>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" value="{{this.el_name}}" placeholder="Elective" name="el_name">
+      <label for="floatingInput">Enter new elective</label>
+    </div>
+    
+  <div class="col-12 d-grid">
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</form>
+<style>
+body
+{
+  height:768px;
+  background-image: url('../../icons/profile-back.png');
+  color:white;
+  font-family: Architects Daughter;
+  overflow: hidden;
+}
+a{
+  color: rgb(28, 133, 203);
+}
+a:hover{
+  color: rgb(237, 156, 44);
+}
+
+.placeholder{
+    color:rgb(36, 33, 33);
+  }
+  label{
+    color:rgb(36, 33, 33);
+  }
+
+.breadcrumb-item.active{
+  color:rgb(237, 156, 44);
+}
+form{
+    position: relative;
+    top:60%;
+    left:30%;
+    width:80%;
+}
+</style>
+
+

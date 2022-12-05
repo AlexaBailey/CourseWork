@@ -1,0 +1,470 @@
+body{
+  margin:0;
+}
+
+.homepage-homepage {
+    width: 100%;
+    height: 1133px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    justify-content: center;
+  }
+  .profilebutton:hover{
+    opacity:0.8;
+   
+  }
+  .homepage-image1 {
+    top: 0px;
+    left: 0px;
+    width: 1368px;
+    height: 643px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .homepage-image11 {
+    top: 0px;
+    left: 0px;
+    width: 1368px;
+    height: 643px;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+  }
+  .homepage-i-m-a-g-e172aba8d151ae471ca2c6fb4706c78bb1 {
+    top: 388px;
+    left: 751px;
+    width: 467px;
+    height: 70px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .homepage-i-m-a-g-e4f97f44f30009453d173a69b7288d4871 {
+    top: 329px;
+    left: 498px;
+    width: 239px;
+    height: 70px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .homepage-disciplinstext {
+    top: 36px;
+    left: 913px;
+    color: rgba(255, 255, 255, 1);
+    width: 127px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Architects Daughter;
+    text-shadow: 0 5px 5px black;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .homepage-disciplinstext:hover {
+    color:rgb(204, 131, 35);
+  }
+  .homepage-disciplinstext:active{
+    color:black;
+    border-color:white;
+  }
+  .homepage-enrolltext{
+    top: 36px;
+    left: 1083px;
+    color: rgba(255, 255, 255, 1);
+    width: 102px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    align-self: auto;
+    text-shadow: 0 5px 5px black;
+    font-style: Regular;
+    text-align: left;
+    font-family: Architects Daughter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .homepage-enrolltext:active{
+    color:black;
+    border-color:white;
+  }
+  .homepage-enrolltext:hover{
+    color:rgb(204, 131, 35);
+  }
+  .homepage-about {
+    top: 39px;
+    left: 576px;
+    width: 113px;
+    height: 51px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+
+  .homepage-abouttext {
+  
+    background:none;
+    border:none;
+    color: rgba(255, 255, 255, 1);
+    width: 113px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Architects Daughter;
+    text-shadow: 0 4px 4px black;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .homepage-abouttext:hover {
+    color:rgb(204, 131, 35);
+  }
+  .homepage-aboutinfo {
+    top: 643px;
+    left: 1px;
+    width: 1368px;
+    height: 340.375px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .homepage-description1{
+    position: absolute;
+    left: 3.29%;
+    right: 50.78%;
+    top: 25.56%;
+    bottom: 7.75%;
+    text-align: center;
+    text-shadow: 0px 4px 4px #000;
+    font-family: 'Architects Daughter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+  }
+  .homepage-description2{
+    position: absolute;
+    left: 56.63%;
+    right: 1.9%;
+    top: 25.56%;
+    bottom: 20.68%;
+    text-shadow: 0px 4px 4px #000;
+    font-family: 'Architects Daughter';
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    
+    color: #FFFFFF;}
+  .homepage-hogwartslegacyhdwallpaperbackground23522389hdwallp {
+    top: 0px;
+    left: 0px;
+    width: 1368px;
+    height: 340px;
+    position: absolute;
+    border-color: transparent;
+    position: absolute;
+
+
+    filter: blur(2px);
+  }
+  .homepage-contactinfo {
+    top: 983px;
+    left: 0px;
+    width: 1368px;
+    height: 150px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .homepage-rectangle5 {
+    top: 0px;
+    left: 0px;
+    width: 1368px;
+    height: 150px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .homepage-emailtext {
+    position: absolute;
+    left: 7.89%;
+    right: 61.48%;
+    top: 23.33%;
+    bottom: 29.33%;
+    
+    font-family: 'Architects Daughter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .homepage-addresstext {
+    position: absolute;
+    left: 36.99%;
+    right: 33.04%;
+    top: 47.33%;
+    bottom: 20.67%;
+    
+    font-family: 'Architects Daughter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    
+    color: #FFFFFF;
+    
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .homepage-owltext {
+    position: absolute;
+    left: 36.99%;
+    right: 43.93%;
+    top: 18%;
+    bottom: 50%;
+    
+    font-family: 'Architects Daughter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    
+    color: #FFFFFF;
+    
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .homepage-newstext {
+    top: 40px;
+    left: 146px;
+    color: rgba(255, 255, 255, 1);
+    width: 240px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Architects Daughter;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 0px 5px 5px black ;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .homepage-newstext:hover {
+    color: rgb(204, 131, 35);
+  }
+  .homepage-sorttext {
+    top: 36px;
+    left: 706px;
+    color: rgb(255, 255, 255);
+    width: 207px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Architects Daughter;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 0px 5px 5px black;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .homepage-sorttext:hover {
+    color: rgb(204, 131, 35);
+  }
+  .homepage-rectangle1 {
+    top: 353px;
+    right: 205px;
+    width: 1053px;
+    height: 95px;
+    opacity: 0.15;
+    position: absolute;
+    box-sizing: content-box;
+  }
+  .homepage-i-m-a-g-e113e63bb8a450fe6eb8133690e88457d1 {
+    top: 249px;
+    left: 146px;
+    width: 430px;
+    height: 70px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .homepage-castleback {
+    top: 0px;
+    left: 0px;
+    width: 123px;
+    height: 95px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .homepage-loginback {
+    top: 1px;
+    left: 1176px;
+    width: 190px;
+    height: 94px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .homepage-icons8hogwarts1001 {
+    top: 10px;
+    left: 22px;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .homepage-navbar-back{
+    position: absolute;
+    left: 123px;
+    top: 0px;
+    background: #D9D9D9;
+    mix-blend-mode: lighten;
+    opacity: 0.15;
+    box-shadow: 0px 3px 3px black;
+    backdrop-filter: blur(2px);
+      }
+ 
+  .homepage-icons8deathlyhallows1001 {
+    top: 618px;
+    left: 595px;
+    width: 169px;
+    height: 169px;
+    position: absolute;
+    padding-top: var(--dl-space-space-halfunit);
+    border-color: transparent;
+    position: absolute;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  .homepage-contact {
+    top: 39px;
+    left: 416px;
+    width: 130px;
+    height: 51px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .homepage-contacttext {
+
+    background: None;
+    border:None;
+    color: rgba(255, 255, 255, 1);
+    width: 130px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    align-self: auto;
+    text-shadow: 0px 5px 5px black ;
+    font-style: Regular;
+    text-align: left;
+    font-family: Architects Daughter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .homepage-contacttext:hover {
+    color:rgb(204, 131, 35);
+  }
+  .loginbutton1{
+
+    position: absolute;
+    width: 146px;
+    height: 43px;
+    left: 1200px;
+    top: 38px;
+    background: rgba(134, 208, 255, 0.94);
+    opacity: 0.8;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    font-family: Alata;
+    font-weight: 400;
+    
+  }
+  .homepage-login {
+    top: 38px;
+    left: 1200px;
+    width: 146px;
+    height: 40px;
+    opacity: 0.80;
+    position: absolute;
+    box-shadow: 0px 4px 4px black;
+    border-color: transparent;
+    border-radius: 20px;
+  }
+  .homepage-logintext {
+    top: 36px;
+    left: 1237px;
+    color: rgba(255, 255, 255, 1);
+    width: 99px;
+    height: auto;
+    position: absolute;
+    font-size: 30px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Alata;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .profilebutton{
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    left: 1225px;
+    top:3px;
+    background: None;
+    border:None;
+    
+  }
